@@ -369,6 +369,18 @@ footer a:hover { color: var(--orange-dim); }
   color: var(--border);
   font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
 }
+.photo-item {
+  break-inside: avoid;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.photo-item img {
+  width: 100%; height: auto; display: block;
+  transition: transform 0.4s ease;
+}
+.photo-item:hover img { transform: scale(1.03); }
 
 /* Client logos */
 .clients-section {
@@ -706,16 +718,49 @@ footer a:hover { color: var(--orange-dim); }
 
   .nav-toggle { display: flex; }
 
+  /* Menu panel — slide-down met blur */
   .nav-links {
-    display: none;
-    position: fixed; top: 65px; left: 0; right: 0; bottom: 0;
-    background: rgba(14,14,14,0.97);
-    backdrop-filter: blur(16px);
-    flex-direction: column; align-items: center; justify-content: center;
-    gap: 40px; z-index: 199;
+    position: fixed; top: 65px; left: 0; right: 0;
+    background: rgba(14, 14, 14, 0.80);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 24px 56px rgba(0, 0, 0, 0.60);
+    flex-direction: column; align-items: stretch; justify-content: flex-start;
+    gap: 0; z-index: 199;
+    padding-bottom: 8px;
+    /* Standaard verborgen, animatie via opacity */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
   }
-  .nav-links.open { display: flex; }
-  .nav-links a { font-size: 16px; letter-spacing: 3px; }
+  /* Oranje accent-lijn bovenaan het menu */
+  .nav-links::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, var(--orange), transparent);
+    flex-shrink: 0;
+    margin-bottom: 4px;
+  }
+  .nav-links.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .nav-links li {
+    border-bottom: 1px solid rgba(39, 39, 39, 0.7);
+  }
+  .nav-links li:last-child { border-bottom: none; }
+  .nav-links a {
+    font-size: 12px; letter-spacing: 3px;
+    padding: 18px 28px; display: block;
+    transition: color 0.15s, background 0.15s;
+  }
+  .nav-links a:hover { background: rgba(255, 255, 255, 0.03); }
 
   .hero { padding: 140px 24px 60px; }
   .hero h1 { font-size: clamp(42px, 12vw, 60px); }
