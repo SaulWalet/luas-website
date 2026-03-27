@@ -8,7 +8,7 @@
   /* ── NAV ── */
   const navHTML = `
 <a href="index.html" class="nav-logo">
-  <img src="assets/logo.png" alt="Luas" onerror="this.style.display='none'">
+  <img src="assets/Logo.png" alt="Luas" onerror="this.style.display='none'">
   LUAS<span>.</span>
 </a>
 <div class="nav-right">
