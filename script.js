@@ -7,16 +7,16 @@
 
   /* ── NAV ── */
   const navHTML = `
-<a href="index.html" class="nav-logo">
+<a href="/" class="nav-logo">
   <img src="assets/Logo.png" alt="Luas" onerror="this.style.display='none'">
   LUAS<span>.</span>
 </a>
 <div class="nav-right">
   <ul class="nav-links" id="navLinks">
-    <li><a href="portfolio.html" data-page="portfolio">Portfolio</a></li>
-    <li><a href="diensten.html" data-page="diensten">Diensten</a></li>
-    <li><a href="over-saul.html" data-page="over-saul">Over Saul</a></li>
-    <li><a href="contact.html" data-page="contact">Contact</a></li>
+    <li><a href="/portfolio" data-page="portfolio">Portfolio</a></li>
+    <li><a href="/diensten" data-page="diensten">Diensten</a></li>
+    <li><a href="/over-saul" data-page="over-saul">Over Saul</a></li>
+    <li><a href="/contact" data-page="contact">Contact</a></li>
   </ul>
   <a href="https://www.instagram.com/luascreativesolutions" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
