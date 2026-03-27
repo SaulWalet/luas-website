@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Luas Creative Solutions</title>
+  <meta name="description" content="Neem contact op met Luas Creative Solutions. Geen lange intake, gewoon een berichtje sturen.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+
+<nav id="nav"></nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-label">Luas Creative Solutions</div>
+  <h1>Laten we<br><em>koffie</em><br>doen.</h1>
+  <p class="hero-sub">Geen lange intake, geen gedoe. Stuur een berichtje, dan plannen we die koffie in.</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="contact-grid">
+
+    <!-- Links: contactgegevens -->
+    <div class="fade-up">
+      <div class="contact-info-label">Direct bereikbaar</div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-detail">E-mail</div>
+          <div class="contact-value"><a href="mailto:info@csluas.com">info@csluas.com</a></div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.17h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.73a16 16 0 0 0 6 6l1.27-.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-detail">Telefoon</div>
+          <div class="contact-value"><a href="tel:+31620596561">06-20596561</a></div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-detail">Instagram</div>
+          <div class="contact-value">
+            <a href="https://www.instagram.com/luascreativesolutions" target="_blank" rel="noopener">@luascreativesolutions</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 40px; padding: 24px; background: var(--card); border: 1px solid var(--border); border-radius: 8px;">
+        <div style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--orange); margin-bottom: 12px;">Regio</div>
+        <p style="font-size: 14px; color: var(--muted); line-height: 1.7;">
+          Gevestigd in de regio <strong style="color: var(--text);">Ede, Veenendaal &amp; Wageningen</strong>.<br>
+          Reiskosten tot 30 km gratis. Daarna € 0,23/km.
+        </p>
+      </div>
+    </div>
+
+    <!-- Rechts: formulier -->
+    <div class="fade-up-2">
+      <div class="form-label">Stuur een berichtje</div>
+      <form
+        action="https://formspree.io/f/JOUW_ID"
+        method="POST"
+        novalidate
+      >
+        <div class="form-group">
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" placeholder="Jouw naam" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="jouw@email.nl" required>
+        </div>
+        <div class="form-group">
+          <label for="telefoon">Telefoonnummer <span style="color:var(--muted); font-size:10px;">(optioneel)</span></label>
+          <input type="tel" id="telefoon" name="telefoon" placeholder="06-xxxxxxxx">
+        </div>
+        <div class="form-group">
+          <label for="bericht">Bericht</label>
+          <textarea id="bericht" name="bericht" placeholder="Vertel kort over je event of project..." required></textarea>
+        </div>
+        <button type="submit" class="cta-btn form-submit">Versturen</button>
+      </form>
+      <p style="margin-top: 14px; font-size: 11px; color: var(--muted); line-height: 1.6;">
+        Door dit formulier te versturen ga je akkoord met het verwerken van je gegevens voor het beantwoorden van je vraag.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer id="footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
