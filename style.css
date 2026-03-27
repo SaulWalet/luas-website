@@ -786,3 +786,61 @@ footer a:hover { color: var(--orange-dim); }
 
   .cta-box { padding: 40px 24px; }
 }
+
+/* ─────────────────────────────
+   LIGHT MODE
+   ───────────────────────────── */
+
+/* Vloeiende overgang voor alle elementen */
+body, nav, footer,
+.usp-item, .video-card, .pkg, .addon, .step,
+.about-photo, .contact-icon, .form-group input,
+.form-group textarea, .rate-strip, .cta-box,
+.client-logo-placeholder {
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="light"] {
+  --black:     #F4F1EB;
+  --card:      #EAE6DC;
+  --card-warm: #F0E8D4;
+  --border:    #D4CFC6;
+  --text:      #0E0E0E;
+  --muted:     #6A6660;
+}
+
+/* Navbar achtergrond */
+[data-theme="light"] nav {
+  background: rgba(244, 241, 235, 0.92);
+}
+
+/* Mobiel menu panel */
+[data-theme="light"] .nav-links {
+  background: rgba(244, 241, 235, 0.90);
+  border-bottom-color: #D4CFC6;
+}
+
+/* Video thumbnail achtergrond */
+[data-theme="light"] .video-thumb {
+  background: #ccc;
+}
+
+/* Pakket feature lijst */
+[data-theme="light"] .pkg-features li {
+  color: #444;
+}
+
+/* ── THEME TOGGLE KNOP ── */
+.nav-theme {
+  background: none; border: none; cursor: pointer;
+  color: var(--muted); transition: color 0.2s;
+  display: flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; padding: 0; flex-shrink: 0;
+}
+.nav-theme:hover { color: var(--orange); }
+.nav-theme svg { width: 18px; height: 18px; }
+
+/* Donker: toon zon · Licht: toon maan */
+.nav-theme .icon-moon { display: none; }
+[data-theme="light"] .nav-theme .icon-sun  { display: none; }
+[data-theme="light"] .nav-theme .icon-moon { display: block; }
