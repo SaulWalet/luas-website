@@ -52,6 +52,8 @@
   <a href="mailto:info@csluas.com">info@csluas.com</a>
   &nbsp;·&nbsp;
   <a href="tel:+31620596561">06-20596561</a>
+  &nbsp;·&nbsp;
+  <a href="/algemene-voorwaarden">Algemene Voorwaarden</a>
 </p>`;
 
   /* Inject nav */
