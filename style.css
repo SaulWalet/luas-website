@@ -500,7 +500,7 @@ footer a:hover { color: var(--orange-dim); }
   display: flex; align-items: flex-start; gap: 10px;
 }
 .pkg-features li::before {
-  content: '—'; color: var(--orange);
+  content: '·'; color: var(--orange);
   font-size: 11px; margin-top: 2px; flex-shrink: 0;
 }
 
@@ -721,9 +721,9 @@ footer a:hover { color: var(--orange-dim); }
   /* Menu panel — slide-down met blur */
   .nav-links {
     position: fixed; top: 65px; left: 0; right: 0;
-    background: rgba(14, 14, 14, 0.80);
-    backdrop-filter: blur(28px);
-    -webkit-backdrop-filter: blur(28px);
+    background: rgba(14, 14, 14, 0.97);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
     box-shadow: 0 24px 56px rgba(0, 0, 0, 0.60);
     flex-direction: column; align-items: stretch; justify-content: flex-start;
@@ -816,7 +816,7 @@ body, nav, footer,
 
 /* Mobiel menu panel */
 [data-theme="light"] .nav-links {
-  background: rgba(244, 241, 235, 0.90);
+  background: rgba(244, 241, 235, 0.97);
   border-bottom-color: #D4CFC6;
 }
 
