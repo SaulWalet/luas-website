@@ -281,6 +281,16 @@ footer a:hover { color: var(--orange-dim); }
   gap: 16px;
 }
 
+/* Shorts grid — smaller cards in 9:16 */
+.shorts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.video-thumb--vertical {
+  aspect-ratio: 9/16;
+}
+
 /* Shared video card (used on portfolio + index) */
 .video-card {
   background: var(--card);
@@ -694,6 +704,7 @@ footer a:hover { color: var(--orange-dim); }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .featured-grid { grid-template-columns: 1fr 1fr; }
   .video-grid { grid-template-columns: 1fr 1fr; }
+  .shorts-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 700px) {
@@ -708,6 +719,7 @@ footer a:hover { color: var(--orange-dim); }
   .usp-item:last-child  { border-radius: 0 0 6px 6px; }
   .featured-grid { grid-template-columns: 1fr; }
   .video-grid { grid-template-columns: 1fr; }
+  .shorts-grid { grid-template-columns: repeat(2, 1fr); }
   .photo-grid { columns: 2; }
 }
 
