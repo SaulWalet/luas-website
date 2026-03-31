@@ -300,6 +300,16 @@ footer a:hover { color: var(--orange-dim); }
   cursor: pointer;
   transition: border-color 0.25s, transform 0.25s;
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.video-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.video-info p {
+  margin-top: auto;
 }
 .video-card:hover { border-color: #444; transform: translateY(-3px); }
 
