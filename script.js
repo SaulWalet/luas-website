@@ -14,8 +14,6 @@
 <div class="nav-right">
   <ul class="nav-links" id="navLinks">
     <li><a href="/portfolio" data-page="portfolio">Portfolio</a></li>
-    <li><a href="/diensten" data-page="diensten">Diensten</a></li>
-    <li><a href="/over-saul" data-page="over-saul">Over Saul</a></li>
     <li><a href="/contact" data-page="contact">Contact</a></li>
   </ul>
   <a href="https://www.instagram.com/luascreativesolutions" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram">

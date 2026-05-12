@@ -1,4 +1,8 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/diensten", "destination": "/", "permanent": true },
+    { "source": "/over-saul", "destination": "/", "permanent": true }
+  ]
 }
